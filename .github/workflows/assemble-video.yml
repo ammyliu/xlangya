@@ -1,0 +1,38 @@
+name: Assemble submitted video
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/assemble-video.yml']
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reassemble original video and verify SHA-256
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          parts = sorted(Path(".video-upload").glob("part-*"))
+          assert len(parts) == 10, len(parts)
+          output = Path("videos/27b76256ed7974f60967ebb01cbcbc1a.mp4")
+          with output.open("wb") as target:
+              for part in parts:
+                  target.write(part.read_bytes())
+          data = output.read_bytes()
+          assert len(data) == 31270031, len(data)
+          digest = hashlib.sha256(data).hexdigest()
+          assert digest == "d9faab6070246f4475d78d4ff12304bf74020798b4c146f4af17abd2e24f3771", digest
+          Path("videos/verification.txt").write_text("Verified original video\nBytes: 31270031\nSHA-256: " + digest + "\n")
+          print("Verified", output, len(data), digest)
+          PY
+      - name: Commit complete video
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add videos/27b76256ed7974f60967ebb01cbcbc1a.mp4 videos/verification.txt
+          git rm -r .video-upload
+          git commit -m "media: assemble and verify original submitted video"
+          git push origin HEAD:main
