@@ -1,0 +1,38 @@
+{
+  "source": "麒麟才子.mp4",
+  "canvas_project": "59dd1bc3-9f28-465a-9f4d-01bc5b720d1d",
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "梅岭残梦",
+      "file": "麒麟才子-第1集-梅岭残梦.mp4",
+      "source_start": 0,
+      "source_end": 50.64,
+      "seconds": 50.64,
+      "decode_ok": true,
+      "sha256": "07247b3029fa15ea8e97982255e0b6feaf5f1456d7beb52b4cad681282c9aaed"
+    },
+    {
+      "episode": 2,
+      "title": "金陵城门",
+      "file": "麒麟才子-第2集-金陵城门.mp4",
+      "source_start": 51.2,
+      "source_end": 88.16,
+      "seconds": 36.959999999999994,
+      "decode_ok": true,
+      "sha256": "7de5aafcda62d59400db7fb01df52ba349a5666cc348031115417721d2f2769b"
+    },
+    {
+      "episode": 3,
+      "title": "护国柱石",
+      "file": "麒麟才子-第3集-护国柱石.mp4",
+      "source_start": 89.2,
+      "source_end": 166.0,
+      "seconds": 76.8,
+      "decode_ok": true,
+      "sha256": "68b71b56b15e975b2d88c3bde4b8364ab1e3d95f6d7882c1eed365c11c78b025"
+    }
+  ],
+  "editing": "按Canvas三个章节切分，保留原片声音字幕和幕次标题；去除章间叠化过渡及166秒后的角色、道具、场景展示。原视频不变。",
+  "canvas_new_credits": 0
+}

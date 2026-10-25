@@ -1,10 +1,76 @@
 {
-  "file": "27b76256ed7974f60967ebb01cbcbc1a.mp4",
-  "bytes": 31270031,
-  "sha256": "d9faab6070246f4475d78d4ff12304bf74020798b4c146f4af17abd2e24f3771",
-  "duration_seconds": 232.16,
-  "width": 960.0,
-  "height": 544.0,
-  "episode_assignment": "待确认",
-  "source": "用户工作文件夹原始视频，未转码"
+  "updated": "2026-10-26",
+  "total_seconds": 533.05,
+  "episodes": [
+    {
+      "series": "麒麟才子",
+      "episode": 1,
+      "title": "梅岭残梦",
+      "path": "videos/麒麟才子/第1集-梅岭残梦.mp4",
+      "bytes": 17926647,
+      "sha256": "07247b3029fa15ea8e97982255e0b6feaf5f1456d7beb52b4cad681282c9aaed",
+      "git_sha": "1bc0750755e127ae5a378fdc95d5a8dbfda41ece",
+      "seconds": 50.64
+    },
+    {
+      "series": "麒麟才子",
+      "episode": 2,
+      "title": "金陵城门",
+      "path": "videos/麒麟才子/第2集-金陵城门.mp4",
+      "bytes": 11126160,
+      "sha256": "7de5aafcda62d59400db7fb01df52ba349a5666cc348031115417721d2f2769b",
+      "git_sha": "6e48a618dad487268b99be5e94917b39c274e278",
+      "seconds": 36.96
+    },
+    {
+      "series": "麒麟才子",
+      "episode": 3,
+      "title": "护国柱石",
+      "path": "videos/麒麟才子/第3集-护国柱石.mp4",
+      "bytes": 19483070,
+      "sha256": "68b71b56b15e975b2d88c3bde4b8364ab1e3d95f6d7882c1eed365c11c78b025",
+      "git_sha": "f51f51da3c28b01f922f8d82fd1cb31be8e4d8be",
+      "seconds": 76.8
+    },
+    {
+      "series": "琅琊阁-锦囊令",
+      "episode": 1,
+      "title": "七牛送令",
+      "path": "videos/琅琊阁-锦囊令/第1集-七牛送令.mp4",
+      "bytes": 17164375,
+      "sha256": "67d21702d3b8b7913adadbfad79cd2990e7966ec198ec403e55c1d5c6905e84c",
+      "git_sha": "4f3af32fc18086bd29c436d290cc7fdb5c99b283",
+      "seconds": 126.81
+    },
+    {
+      "series": "琅琊阁-锦囊令",
+      "episode": 2,
+      "title": "锦囊有界",
+      "path": "videos/琅琊阁-锦囊令/第2集-锦囊有界.mp4",
+      "bytes": 20573061,
+      "sha256": "69acfc58cf639b2352460860f88a2ac4e2b0ee0844dd803d0f3be0c774af6167",
+      "git_sha": "988b7a3e5039973b9d6492edd98b1ac014e7fee6",
+      "seconds": 120.92
+    },
+    {
+      "series": "琅琊阁-锦囊令",
+      "episode": 3,
+      "title": "同令不同局",
+      "path": "videos/琅琊阁-锦囊令/第3集-同令不同局.mp4",
+      "bytes": 20768933,
+      "sha256": "e822fae3d244fa6c9fa21b3c08d9e360dfb8ab6e50afa650bcb5470447c81b51",
+      "git_sha": "8bf56c9da9e8dd594be77b8cfea11faf06c1e798",
+      "seconds": 120.92
+    }
+  ],
+  "credits": {
+    "total_allocation": 100000,
+    "qilincaizi": 43464,
+    "jinnangling": 16388,
+    "total_project_usage": 59852,
+    "allocation_less_two_projects": 40148,
+    "scope": "两个Canvas项目累计消耗；额度差额不是全账户实时余额，未将其他项目计入。",
+    "verified_date": "2026-10-26",
+    "postproduction_canvas_credits": 0
+  }
 }

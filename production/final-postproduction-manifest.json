@@ -5,8 +5,8 @@
       "episode": 1,
       "file": "琅琊阁·锦囊令-第1集.mp4",
       "seconds": 126.81,
-      "bytes": 17895302,
-      "sha256": "c9fa36ccbcd71a3669be0b048d1a82fd9b0d5a2f3237921a7e6e7be78571c4fd",
+      "bytes": 17164375,
+      "sha256": "67d21702d3b8b7913adadbfad79cd2990e7966ec198ec403e55c1d5c6905e84c",
       "decode_ok": true,
       "decode_log": ""
     },
@@ -14,8 +14,8 @@
       "episode": 2,
       "file": "琅琊阁·锦囊令-第2集.mp4",
       "seconds": 120.92,
-      "bytes": 20561055,
-      "sha256": "9aeb08d5bebc0703ebd63f0de84c5e93048ac9f198939b5b1ec8c69f9471d107",
+      "bytes": 20573061,
+      "sha256": "69acfc58cf639b2352460860f88a2ac4e2b0ee0844dd803d0f3be0c774af6167",
       "decode_ok": true,
       "decode_log": ""
     },
@@ -23,8 +23,8 @@
       "episode": 3,
       "file": "琅琊阁·锦囊令-第3集.mp4",
       "seconds": 120.92,
-      "bytes": 20986198,
-      "sha256": "703def2f10ba1d8417ad16e49eb4ea55fb76ba21de0f2baf942004de0d15787e",
+      "bytes": 20768933,
+      "sha256": "e822fae3d244fa6c9fa21b3c08d9e360dfb8ab6e50afa650bcb5470447c81b51",
       "decode_ok": true,
       "decode_log": ""
     }
@@ -48,6 +48,12 @@
     "outro_seconds": 7,
     "subtitles": "burned in; supplementary SRT uses final-video timing",
     "labels": "first appearance per episode",
-    "validation": "complete decode and visual contact-sheet checks; dialogue timing from ASR with script terminology corrections"
+    "validation": "complete decode and visual contact-sheet checks; dialogue timing from ASR with script terminology corrections",
+    "revision": 4,
+    "character_labels": "Songti SC vertical, positioned beside individual characters",
+    "outro": "万法归阁，各展所长｜锦囊有道，执令在人",
+    "brand_signature": "七牛云 MaaS",
+    "episode1_fix": "Reframed source 30.1243–35.4993 seconds to exclude duplicate Mei Changsu; preserved audio and timing.",
+    "episode3_fix": "Source 67.5–70.625s reframed to Lin Chen face; malformed hand and appearing patient excluded. Cut back after patient fully present. Audio/timing unchanged."
   }
 }

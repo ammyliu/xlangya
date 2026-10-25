@@ -1,4 +1,4 @@
-name: Assemble submitted video
+name: Verify and publish six episodes
 on:
   push:
     branches: [main]
@@ -10,29 +10,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Reassemble original video and verify SHA-256
+      - name: Assemble six videos and verify every checksum
         run: |
-          python3 - <<'PY'
+          python3 - <<'PYCODE'
           from pathlib import Path
-          import hashlib
-          parts = sorted(Path(".video-upload").glob("part-*"))
-          assert len(parts) == 10, len(parts)
-          output = Path("videos/27b76256ed7974f60967ebb01cbcbc1a.mp4")
-          with output.open("wb") as target:
-              for part in parts:
-                  target.write(part.read_bytes())
-          data = output.read_bytes()
-          assert len(data) == 31270031, len(data)
-          digest = hashlib.sha256(data).hexdigest()
-          assert digest == "d9faab6070246f4475d78d4ff12304bf74020798b4c146f4af17abd2e24f3771", digest
-          Path("videos/verification.txt").write_text("Verified original video\nBytes: 31270031\nSHA-256: " + digest + "\n")
-          print("Verified", output, len(data), digest)
-          PY
-      - name: Commit complete video
+          import json, hashlib
+          manifest = json.loads(Path('videos/manifest.json').read_text())
+          assert len(manifest['episodes']) == 6
+          lines = []
+          for i, item in enumerate(manifest['episodes']):
+              parts = sorted(Path(f'.video-upload/{i}').glob('part-*'))
+              assert len(parts) == (item['bytes'] + 2999999) // 3000000
+              data = b''.join(part.read_bytes() for part in parts)
+              assert len(data) == item['bytes'], item['path']
+              assert hashlib.sha256(data).hexdigest() == item['sha256'], item['path']
+              output = Path(item['path'])
+              output.parent.mkdir(parents=True, exist_ok=True)
+              output.write_bytes(data)
+              lines.append(f"{item['sha256']}  {item['path']}")
+          Path('videos/verification.txt').write_text('Verified six final episodes, 2026-10-26\n' + '\n'.join(lines) + '\n')
+          PYCODE
+      - name: Replace previous submission with verified six episodes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add videos/27b76256ed7974f60967ebb01cbcbc1a.mp4 videos/verification.txt
+          git rm --ignore-unmatch videos/27b76256ed7974f60967ebb01cbcbc1a.mp4
           git rm -r .video-upload
-          git commit -m "media: assemble and verify original submitted video"
+          git add videos
+          git commit -m "media: publish six verified episodes from both Canvas projects"
           git push origin HEAD:main

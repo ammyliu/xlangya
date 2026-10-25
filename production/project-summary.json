@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "team": [
+    {
+      "name": "王健",
+      "role": "队长",
+      "work": "视频制作"
+    },
+    {
+      "name": "张袁昊",
+      "role": "队员",
+      "work": "剧本制作和创意设定"
+    },
+    {
+      "name": "刘彩菊",
+      "role": "队员",
+      "work": "视频制作和后期制作"
+    }
+  ],
+  "series": [
+    "麒麟才子",
+    "琅琊阁-锦囊令"
+  ],
+  "episodes": 6,
+  "canvas_allocation": 100000,
+  "canvas_project_usage": 59852,
+  "allocation_less_projects": 40148
+}
