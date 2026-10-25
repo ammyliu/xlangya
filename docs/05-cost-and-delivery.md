@@ -16,6 +16,5 @@
 
 ## 交付内容
 
-两部剧各三集，文件存于 videos 下对应剧名目录。SHA-256、字节数、Git blob SHA 和时长见 [manifest.json](../videos/manifest.json)。旧的单一原片从当前仓库作品目录移除，历史提交仍可追溯；本地原片保留。
-
+两部剧各三集，文件存于 videos 下对应剧名目录。SHA-256、字节数、Git blob SHA 和时长见 [manifest.json](../videos/manifest.json)。
 《麒麟才子》三个短章约 51、37、77 秒；《锦囊令》三集约 127、121、121 秒。原课题要求每集 2—3 分钟，《麒麟才子》短章尚不满足此项，交付记录保留实际时长。
