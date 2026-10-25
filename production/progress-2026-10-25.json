@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-25",
+  "status": "generating_not_final",
+  "additional_credit_cap": 12700,
+  "baseline_credits": 7300,
+  "new_video_submissions": 25,
+  "quoted_video_credits": 9000,
+  "known_other_credits": 19,
+  "reserved_additional_credits": 9019,
+  "remaining_reserve": 3681,
+  "model": "Seedance 2.0-mini",
+  "resolution": "480p",
+  "sound": true,
+  "episodes": [
+    {
+      "title": "七牛送令",
+      "body_seconds": 114
+    },
+    {
+      "title": "锦囊有界",
+      "body_seconds": 108
+    },
+    {
+      "title": "同令不同局",
+      "body_seconds": 108
+    }
+  ],
+  "packaging": {
+    "intro_seconds": 5,
+    "outro_seconds": 7,
+    "outro": "七牛云 MaaS｜一处汇聚，各有所长",
+    "subtitles": "local postproduction aligned to actual generated dialogue"
+  },
+  "note": "Generation in progress. Quotes are not final billed usage. Final videos not yet assembled."
+}
