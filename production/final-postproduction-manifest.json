@@ -1,0 +1,53 @@
+{
+  "title": "琅琊阁·锦囊令",
+  "episodes": [
+    {
+      "episode": 1,
+      "file": "琅琊阁·锦囊令-第1集.mp4",
+      "seconds": 126.81,
+      "bytes": 17895302,
+      "sha256": "c9fa36ccbcd71a3669be0b048d1a82fd9b0d5a2f3237921a7e6e7be78571c4fd",
+      "decode_ok": true,
+      "decode_log": ""
+    },
+    {
+      "episode": 2,
+      "file": "琅琊阁·锦囊令-第2集.mp4",
+      "seconds": 120.92,
+      "bytes": 20561055,
+      "sha256": "9aeb08d5bebc0703ebd63f0de84c5e93048ac9f198939b5b1ec8c69f9471d107",
+      "decode_ok": true,
+      "decode_log": ""
+    },
+    {
+      "episode": 3,
+      "file": "琅琊阁·锦囊令-第3集.mp4",
+      "seconds": 120.92,
+      "bytes": 20986198,
+      "sha256": "703def2f10ba1d8417ad16e49eb4ea55fb76ba21de0f2baf942004de0d15787e",
+      "decode_ok": true,
+      "decode_log": ""
+    }
+  ],
+  "total_seconds": 368.65,
+  "credits": {
+    "project_total": 16388,
+    "prior_baseline": 7300,
+    "new_used": 9088,
+    "new_cap": 12700,
+    "remaining": 3612,
+    "source": "Canvas project usage verified 2026-10-25 after all generation completed",
+    "postproduction_canvas_credits": 0,
+    "project_credits_per_finished_minute": 2667.25,
+    "new_credits_per_finished_minute": 1479.13
+  },
+  "postproduction": {
+    "dimensions": "854x480",
+    "fps": 24,
+    "intro_seconds": 5,
+    "outro_seconds": 7,
+    "subtitles": "burned in; supplementary SRT uses final-video timing",
+    "labels": "first appearance per episode",
+    "validation": "complete decode and visual contact-sheet checks; dialogue timing from ASR with script terminology corrections"
+  }
+}
